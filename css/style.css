@@ -20,19 +20,25 @@ h1 {
     color: deeppink;
 }
 
+.col {
+    width: calc(100% / 3);
+    float: left;
+    background-color: black;
+}
+
+.card {
+    box-shadow: 0 0 15px black;
+}
+
+.float-right > div {
+    color: white;
+}
+
 /* CLEARFIX */
 .clearfix {
     content: "";
     display: table;
     clear: both;
-}
-
-.col {
-    width: calc(100% / 3);
-    height: 100px;
-    border: 1px solid black;
-    float: left;
-    background-color: aqua;
 }
 
 /* FIRST SECTION */
@@ -46,7 +52,32 @@ h1 {
 
 /* SECOND SECTION */
 .container section:last-child {
-    background-color: brown;
     width: 100%;
     padding: 30px 0;
+}
+
+.card > img {
+    height: 100px;
+    float: left;
+}
+
+.float-right {
+    margin-left: 15px;
+    padding: 10px 0;
+    float: right;
+    line-height: calc(80px / 3);
+}
+
+.float-right div:first-child {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.float-right div:nth-child(2) {
+    font-size: 15px;
+}
+
+.float-right div:last-child {
+    font-size: 14px;
+    color: aqua;
 }
