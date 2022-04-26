@@ -21,7 +21,8 @@ h1 {
 }
 
 .col {
-    width: calc(100% / 3);
+    margin: 0 10px 50px ;
+    width: calc(100% / 3 - 20px);
     float: left;
     background-color: black;
 }
